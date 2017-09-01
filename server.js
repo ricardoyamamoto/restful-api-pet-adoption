@@ -21,8 +21,9 @@ app.use(morgan('tiny'));
 app.use('/', routes);
 
 app.listen(config.server.port, () => {
-  console.log(`Magic happens on port ${config.server.port}`);
-  console.log(process.env.PORT);
+    console.log(`Environment: ${config.environment}`);
+    console.log(`Magic happens on port ${config.server.port}`);
+    console.log(`MongoDB URL: ${config.mongo.url}`);
 });
 
 module.exports = app;
