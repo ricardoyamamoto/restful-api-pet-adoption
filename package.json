@@ -4,8 +4,8 @@
   "description": "Restful API for the Pet Adoption application",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "engines": {
     "node": ">=6"

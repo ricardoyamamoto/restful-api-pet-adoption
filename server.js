@@ -22,6 +22,7 @@ app.use('/', routes);
 
 app.listen(config.server.port, () => {
   console.log(`Magic happens on port ${config.server.port}`);
+  console.log(process.env.PORT);
 });
 
 module.exports = app;
