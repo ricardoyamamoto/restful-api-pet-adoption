@@ -24,6 +24,7 @@ app.listen(config.server.port, () => {
     console.log(`Environment: ${config.environment}`);
     console.log(`Magic happens on port ${config.server.port}`);
     console.log(`MongoDB URL: ${config.mongo.url}`);
+    console.log(process.env.RICARDO);
 });
 
 module.exports = app;
