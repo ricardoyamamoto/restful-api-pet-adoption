@@ -4,6 +4,7 @@ class Facade {
   }
 
   create(body) {
+    console.log(body);
     const schema = new this.Schema(body);
     return schema.save();
   }
@@ -37,6 +38,13 @@ class Facade {
       .remove(...args)
       .exec();
   }
+
+  insertMany(...args){
+    console.log(args[0]);
+    return this.Schema
+        .insertMany(...args);
+  }
+
 }
 
 module.exports = Facade;
